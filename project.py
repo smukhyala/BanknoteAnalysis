@@ -42,7 +42,6 @@ km_res = KMeans(n_clusters = 2, n_init = 50).fit(V1_V2)
 clusters = km_res.cluster_centers_
 y_kmeans = km_res.predict(V1_V2)
 
-
 plt.scatter(V1d, V2d, c=y_kmeans, cmap='viridis')
 plt.scatter(clusters[:,0], clusters[:,1], s = 100)
 plt.xlabel('V1')
